@@ -10,16 +10,16 @@ public class Position {
         this.column = column;
     }
 
-    public String getColumn() {
-        return String.valueOf(this.column);
+    public int getColumn() {
+        return this.column;
     }
 
     public void setColumn(int column) {
         this.column = column;
     }
 
-    public String getRow() {
-        return String.valueOf(this.row);
+    public int getRow() {
+        return this.row;
     }
 
     public void setRow(int row) {
@@ -28,6 +28,6 @@ public class Position {
 
     @Override
     public String toString() {
-          return getRow() + ", " + getColumn();
+          return String.valueOf(this.row) + ", " + String.valueOf(this.column);
     }
 }
